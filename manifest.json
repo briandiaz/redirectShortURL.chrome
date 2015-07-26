@@ -16,7 +16,7 @@
   },
   "permissions": [
     "http://*.longurl.org/*",
-    "http://longurl.org/*",
+    "http://longurl.org/*"
   ],
   "content_scripts": [
     {
@@ -353,7 +353,7 @@
           "http://zud.me/*",
           "http://zurl.ws/*",
           "http://zz.gd/*",
-          "http://zzang.kr/*",
+          "http://zzang.kr/*"
       ],
       "js": [
         "assets/js/jquery-1.11.3.min.js",
