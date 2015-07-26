@@ -1,4 +1,4 @@
-function ApiRequest(api_url, params, dataType){
+function apiRequest(api_url, params, dataType){
 	this.api_url = api_url;
 	this.params = params;
 	this.dataType = dataType;
@@ -55,5 +55,6 @@ function ApiRequest(api_url, params, dataType){
 		return JSON.parse(request.responseText);
 	};
 }
-
-console.log(window.location.href);
+var r = new apiRequest("http://api.longurl.org/v2/expand", { url: window.location.href, format: "json" }, "json");
+var n = r.get();
+window.location.assign(n["long-url"]);
